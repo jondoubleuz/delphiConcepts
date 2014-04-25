@@ -1,0 +1,29 @@
+
+<div ng-controller="QuartsCtrl">
+
+
+
+    <p>The results so far are {{results}}</p>
+
+    <p>
+        The first quartile for this results set is {{quartiles[0]}}
+    </p>
+    <p>
+        The fourth quartile for this results set is {{quartiles[1]}}
+    </p>
+
+    <p>The mean is {{mean}}</p>
+
+
+    <form ng-submit="addAnswer()">
+        <label>Question - what is the impact of snares on hares 1-5
+            <input type="text" ng-model="answer"  size="30"
+                   placeholder="e"/></label>
+        <input class="btn-primary" type="submit" value="add"/>
+    </form>
+
+
+
+
+
+</div>
